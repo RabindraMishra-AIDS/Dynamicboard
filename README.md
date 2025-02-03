@@ -5,7 +5,7 @@ Hosted on : https://dynamicboard.streamlit.app/
 ### Using Streamlit for creating this Dashboard Application.
 Watch the demonstration below:
 
-
+https://github.com/user-attachments/assets/750bb756-f80c-43a6-a17f-bb7d9a189a55
 
 ## Additional Information
 
