@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.express as px 
 import streamlit as st 
 import emoji
+
 st.set_page_config(page_title="Crop Dashboard",page_icon=":bar_chart:",layout="wide" )
 df=pd.read_csv("static/yield.csv")
 
@@ -69,7 +70,8 @@ st.markdown(
 )
 
 # Replace missing values in the 'Hectogram_per_Hectare' column with 0
-df_selection["Hectogram_per_Hectare"] = df_selection["Hectogram_per_Hectare"].fillna(0)
+df_selection = df_selection.copy()
+df_selection["Hectogram_per_Hectare"].fillna(0, inplace=True)
 
 # Top KPI's
 average_yield=0
